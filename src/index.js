@@ -5,10 +5,10 @@ import "./style.css";
 let btn = document.getElementById("submitBtn");
 btn.onclick = startGame;
 
-let resBtn = document.getElementById("restartBtn");
-resBtn.addEventListener("click", () => {
-  location.reload();
-});
+// let resBtn = document.getElementById("restartBtn");
+// resBtn.addEventListener("click", () => {
+//   window.location.reload();
+// });
 
 let computerGrid = document.querySelector(".computer");
 let computer = new gameboard(computerGrid);
