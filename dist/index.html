@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./output.js" defer></script>
+    <aura:handler name="destroy" value="{!this}" action="{!c.doDestroy}" />
+  </head>
+  <body>
+    <div class="navbar"><h1>Battleships</h1></div>
+    <div class="inputBox">
+      <button id="submitBtn">Start Game</button>
+    </div>
+    <div class="info"><h1 id="infoLine"></h1></div>
+    <div class="container">
+      <div class="user"></div>
+      <div class="computer"></div>
+    </div>
+    <div class="winner">
+      <h1 id="winnerLine"></h1>
+    </div>
+  </body>
+</html>
